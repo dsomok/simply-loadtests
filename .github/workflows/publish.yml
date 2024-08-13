@@ -43,7 +43,7 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Pack nuget package
-        run: dotnet pack -c Release --output .
+        run: dotnet pack -c Release --output ../..
         working-directory: ./src/Simply.LoadTests
 
       - name: Push nuget package
